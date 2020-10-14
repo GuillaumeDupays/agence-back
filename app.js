@@ -1,7 +1,7 @@
 const express = require('express');
-
 const app = express();
 const api = require('./api/v1/index');
+const bodyParser = require('body-parser');
 const cors = require('cors');
 
 const mongoose = require('mongoose');
@@ -9,6 +9,8 @@ const connection = mongoose.connection;
 
 app.set('port', (process.env.port || 3000));
 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use('/api/v1', api); //localhost:3000/api/v1
 
@@ -18,9 +20,9 @@ app.use((req, res) => {
     res.json(err);
 });
 
-mongoose.connect('mongodb://localhost:27017/contacts', { useUnifiedTopology: true, useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/msg-contacts', { useUnifiedTopology: true, useNewUrlParser: true });
 
-connection.on('error', () => {
+connection.on('error', (err) => {
     console.error(`Erreur de connexion vers MongoDb, error: ${err.message}`);
 });
 
