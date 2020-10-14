@@ -1,25 +1,13 @@
 const express = require('express');
 const app = express();
+const api = require('./api/v1/index');
+const cors = require('cors');
 
-const PORT = 3000;
+app.set('port', (process.env.port || 3000));
 
-app.get('/', (req, res) => {
-    res.send('Hello');
-});
+app.use(cors());
+app.use('/api/v1', api); //localhost:3000/api/v1
 
-app.get('/contacts', (req, res) => {
-  res.send('Les contacts')
-});
-
-app.get('/contacts/add', (req, res) => {
-    res.send('Formulaire d\'ajout')
-});
-
-app.get('/contacts/:id', (req, res) => {
-    const id = req.params.id;
-    res.send(`contact numéro ${id}`);
-});
-
-app.listen(PORT, () => {
-   console.log(`écoute le port ${PORT}`);
+app.listen(app.get('port'), () => {
+    console.log(`Ecoute le port ${app.get('port')}`);
 });
