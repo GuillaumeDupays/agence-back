@@ -27,4 +27,14 @@ router.post('/msg-contacts', (req, res) => {
     });
 });
 
+router.delete('/msg-contacts/:id', (req, res) => {
+    const id = req.params.id;
+    MsgContact.findByIdAndDelete(id, (err, msgContact) => {
+        if(err) {
+            return res.status(500).json(err)
+        }
+        res.status(202).json({ msg: `message ${msgContact._id} supprimé`});
+        });
+});
+
 module.exports = router;

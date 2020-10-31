@@ -33,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/usforyou-website/back" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,7 +61,14 @@
       <workItem from="1602652711407" duration="2174000" />
       <workItem from="1602661250921" duration="1621000" />
       <workItem from="1603440785333" duration="1761000" />
-      <workItem from="1603519656101" duration="1124000" />
+      <workItem from="1603519656101" duration="1711000" />
+      <workItem from="1603799904063" duration="115000" />
+      <workItem from="1603801796521" duration="1535000" />
+      <workItem from="1603978287661" duration="1650000" />
+      <workItem from="1604049289537" duration="794000" />
+      <workItem from="1604071674026" duration="2556000" />
+      <workItem from="1604134558935" duration="1670000" />
+      <workItem from="1604154835001" duration="2266000" />
     </task>
     <servers />
   </component>
@@ -77,10 +84,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="952" y="248" key="#index.js/0.0.1920.1080@0.0.1920.1080" timestamp="1603520946247" />
-    <state x="1182" y="380" key="FileChooserDialogImpl" timestamp="1603520622892">
+    <state x="1182" y="380" key="FileChooserDialogImpl" timestamp="1603799928316">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1182" y="380" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1603520622892" />
+    <state x="1182" y="380" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1603799928316" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1602662764930">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

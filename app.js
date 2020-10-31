@@ -7,11 +7,13 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const connection = mongoose.connection;
 
+const prod = 'http://blob-zone.com';
+const test = 'http://localhost:4200';
 app.set('port', (process.env.port || 3000));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({credentials: true, origin: 'http://blob-zone.com'}));
+app.use(cors({credentials: true, origin: `${prod}`}));
 app.use('/api/v1', api); //localhost:3000/api/v1
 
 app.use((req, res) => {
