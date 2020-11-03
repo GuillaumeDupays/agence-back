@@ -1,0 +1,9 @@
+const mongoose = require('mongoose');
+
+const ArticleSchema = new mongoose.Schema({
+   titre: String,
+   dateCreation: { type: Date, default: Date.now },
+   descriptif: String,
+});
+
+module.exports = mongoose.model('Article', ArticleSchema );

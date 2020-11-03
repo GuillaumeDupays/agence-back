@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1de0943-fbc9-412f-a451-2d44f3fe6485" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api/models/article" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models/tag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/v1/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/v1/tag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/v1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../agence" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -68,7 +74,9 @@
       <workItem from="1604049289537" duration="794000" />
       <workItem from="1604071674026" duration="2556000" />
       <workItem from="1604134558935" duration="1670000" />
-      <workItem from="1604154835001" duration="2266000" />
+      <workItem from="1604154835001" duration="4417000" />
+      <workItem from="1604308210513" duration="4269000" />
+      <workItem from="1604383832515" duration="7262000" />
     </task>
     <servers />
   </component>
@@ -76,18 +84,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="950" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602661706881">
+    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604308300250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="950" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1602661706881" />
-    <state x="952" y="248" key="#index.js" timestamp="1603520946247">
+    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604308300250" />
+    <state x="950" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604310456654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="952" y="248" key="#index.js/0.0.1920.1080@0.0.1920.1080" timestamp="1603520946247" />
-    <state x="1182" y="380" key="FileChooserDialogImpl" timestamp="1603799928316">
+    <state x="950" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1604310456654" />
+    <state x="952" y="248" key="#index.js" timestamp="1604310520452">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1182" y="380" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1603799928316" />
+    <state x="952" y="248" key="#index.js/0.0.1920.1080@0.0.1920.1080" timestamp="1604310520452" />
+    <state x="1182" y="380" key="FileChooserDialogImpl" timestamp="1604312566583">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1182" y="380" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604312566583" />
     <state width="498" height="445" key="SwitcherDM" timestamp="1602662764930">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -96,5 +108,9 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1026" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602662477193" />
+    <state x="221" y="157" width="726" height="721" key="dock-window-1" timestamp="1604389845402">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="221" y="157" width="726" height="721" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1604389845402" />
   </component>
 </project>
