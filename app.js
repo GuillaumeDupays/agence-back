@@ -15,7 +15,7 @@ app.set('port', (process.env.port || 3000));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({credentials: true, origin: `${prod}`}));
+app.use(cors({credentials: true, origin: `${test}`}));
 app.use('/api/v1', api, apiArticle, apiTag); //localhost:3000/api/v1
 
 

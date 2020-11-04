@@ -1,7 +1,8 @@
 const express = require('express');
 const router = express();
+const Tag = require('../models/tag');
 
-router.get('./tags', (req, res) => {
+router.get('/tags', (req, res) => {
    Tag.find()
        .sort({ 'created on': -1 })
        .exec()

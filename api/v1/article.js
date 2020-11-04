@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express();
 const Article = require('../models/article');
+const multer = require('multer');
+const path = require('path');
 
 router.get('/articles', (req, res) => {
    Article.find()
@@ -12,6 +14,34 @@ router.get('/articles', (req, res) => {
            error: err
        }));
 });
+
+router.get('./articles/:id', (req, res) => {
+    console.log('req.body', req.body);
+    const id = req.params.id;
+    Article.findById(id)
+        .then( article => res.status(200).json(article))
+        .catch(err => res.status(500).json({
+            message: `article avec l\'id ${id} non trouvé`,
+            error: err
+        }));
+});
+
+//configuration file upload
+const storage = multer.diskStorage({
+    destination: './uploads/',
+    filename: function (req, file, callback) {
+        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
+        callback(null, file.fieldname + '-' + uniqueSuffix)
+    }
+});
+const upload = multer({storage: storage});
+
+router.post('/articles/images', upload.single('articleImage'), (req, res) => {
+    if (!req.file.originalname.match(/\.(jpg|jpeg|png|gif)$/)){
+        return res.status(400).json({ msg: 'Seules les images sont acceptées'});
+    }
+    res.status(201).send({ filename: req.file.filename, file: req.file });
+})
 
 router.post('/articles', (req, res) => {
    console.log('req.body', req.body);
@@ -33,5 +63,13 @@ router.delete('/articles/:id', (req, res) => {
         res.status(202).json({ msg: `message ${article._id} supprimé`});
     });
 });
+
+/*router.get('/images/:image', (req, res) => {
+    const image = req.params.image;
+    res.sendFile(path.join(__dirname, `./uploads/${image}`));
+});*/
+
+
+
 
 module.exports = router;

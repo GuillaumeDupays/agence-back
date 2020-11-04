@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1de0943-fbc9-412f-a451-2d44f3fe6485" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/models/article" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/models/tag.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/v1/tag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/article" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/article" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/article.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/v1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/tag.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +73,9 @@
       <workItem from="1604134558935" duration="1670000" />
       <workItem from="1604154835001" duration="4417000" />
       <workItem from="1604308210513" duration="4269000" />
-      <workItem from="1604383832515" duration="7262000" />
+      <workItem from="1604383832515" duration="7941000" />
+      <workItem from="1604413927386" duration="4198000" />
+      <workItem from="1604473075848" duration="3027000" />
     </task>
     <servers />
   </component>
@@ -108,9 +107,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1026" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602662477193" />
-    <state x="221" y="157" width="726" height="721" key="dock-window-1" timestamp="1604389845402">
+    <state x="243" y="13" width="667" height="889" key="dock-window-1" timestamp="1604473539035">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="221" y="157" width="726" height="721" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1604389845402" />
+    <state x="243" y="13" width="667" height="889" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1604473539035" />
+    <state x="259" y="5" width="667" height="1007" key="dock-window-2" timestamp="1604479313175">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="259" y="5" width="667" height="1007" key="dock-window-2/0.0.1920.1080@0.0.1920.1080" timestamp="1604479313175" />
   </component>
 </project>
