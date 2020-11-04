@@ -11,12 +11,30 @@ const connection = mongoose.connection;
 
 const prod = 'http://blob-zone.com';
 const test = 'http://localhost:4200';
-app.set('port', (process.env.port || 3000));
+
+app.set('port', (process.env.port || 3000 ));
+
+/*app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
+    next();
+});*/
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({credentials: true, origin: `${test}`}));
-app.use('/api/v1', api, apiArticle, apiTag); //localhost:3000/api/v1
+app.use(cors({
+    credentials: true,
+    origin: `${test}`,
+}));
+
+const uploadsDir = require('path').join(__dirname, '/uploads');
+console.log('uploadsDir', uploadsDir);
+app.use(express.static(uploadsDir));
+
+app.use('/api/v1', api ); //localhost:3000/api/v1
+app.use('/api/v1', apiArticle);
+app.use('/api/v1', apiTag);
 
 
 app.use((req, res) => {

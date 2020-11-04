@@ -2,7 +2,7 @@ const express = require('express');
 const router = express();
 const Article = require('../models/article');
 const multer = require('multer');
-const path = require('path');
+
 
 router.get('/articles', (req, res) => {
    Article.find()
