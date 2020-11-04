@@ -5,9 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/models/article" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/article" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/v1/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/article.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/tag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/articleImage-1604479555452-511836550" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <workItem from="1604308210513" duration="4269000" />
       <workItem from="1604383832515" duration="7941000" />
       <workItem from="1604413927386" duration="4198000" />
-      <workItem from="1604473075848" duration="3027000" />
+      <workItem from="1604473075848" duration="9836000" />
     </task>
     <servers />
   </component>
@@ -83,10 +81,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604308300250">
+    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604482835763">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604308300250" />
+    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604482835763" />
     <state x="950" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604310456654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

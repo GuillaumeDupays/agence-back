@@ -30,13 +30,13 @@ router.get('./articles/:id', (req, res) => {
 const storage = multer.diskStorage({
     destination: './uploads/',
     filename: function (req, file, callback) {
-        const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
+        uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
         callback(null, file.fieldname + '-' + uniqueSuffix)
     }
 });
 const upload = multer({storage: storage});
 
-router.post('/articles/images', upload.single('articleImage'), (req, res) => {
+router.post('/articles/images', upload.single('image'), (req, res) => {
     if (!req.file.originalname.match(/\.(jpg|jpeg|png|gif)$/)){
         return res.status(400).json({ msg: 'Seules les images sont acceptées'});
     }
@@ -45,7 +45,7 @@ router.post('/articles/images', upload.single('articleImage'), (req, res) => {
 
 router.post('/articles', (req, res) => {
    console.log('req.body', req.body);
-   const article = new Article(req.body);
+   const article = new Article({...req.body, image: uniqueSuffix});
    article.save((err, article) => {
       if(err) {
           return res.status(500).json(err);
@@ -53,6 +53,8 @@ router.post('/articles', (req, res) => {
       res.status(201).json(article);
    });
 });
+
+let uniqueSuffix = '';
 
 router.delete('/articles/:id', (req, res) => {
     const id = req.params.id;
