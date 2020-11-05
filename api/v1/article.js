@@ -26,21 +26,20 @@ router.get('./articles/:id', (req, res) => {
         }));
 });
 
-let uniqueSuffix = '';
-
 //configuration file upload
 const storage = multer.diskStorage({
     destination: './uploads/',
     filename: function (req, file, callback) {
-        uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9)
+        uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
         callback(null, file.fieldname + '-' + uniqueSuffix);
         console.log('uniqueSuffix', uniqueSuffix);
         callback(null, uniqueSuffix)
     }
 });
+
+let uniqueSuffix = '';
+
 const upload = multer({storage: storage});
-
-
 
 router.post('/articles/images', upload.single('image'), (req, res) => {
     if (!req.file.originalname.match(/\.(jpg|jpeg|png|gif)$/)){
@@ -60,8 +59,6 @@ router.post('/articles', (req, res) => {
    });
 });
 
-
-
 router.delete('/articles/:id', (req, res) => {
     const id = req.params.id;
     Article.findByIdAndDelete(id, (err, article) => {
@@ -76,8 +73,5 @@ router.get('/images/:image', (req, res) => {
     const image = req.params.image;
     res.sendFile(path.join(__dirname, `./uploads/${image}`));
 });
-
-
-
 
 module.exports = router;
