@@ -14,19 +14,16 @@ const test = 'http://localhost:4200';
 
 app.set('port', (process.env.port || 3000 ));
 
-/*app.use((req, res, next) => {
+app.use((req, res, next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     next();
-});*/
+});
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({
-    credentials: true,
-    origin: `${prod}` || 'http://blob-zone.com/admin',
-}));
+app.use(cors({credentials: true, origin: `${prod}`}));
 
 const uploadsDir = require('path').join(__dirname, '/uploads');
 console.log('uploadsDir', uploadsDir);

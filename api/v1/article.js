@@ -72,10 +72,10 @@ router.delete('/articles/:id', (req, res) => {
     });
 });
 
-router.get('/images/:image', (req, res) => {
+/*router.get('/images/:image', (req, res) => {
     const image = req.params.image;
     res.sendFile(path.join(__dirname, `./uploads/${image}`));
-});
+});*/
 
 
 
