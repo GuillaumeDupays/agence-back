@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors({
     credentials: true,
-    origin: `${test}`,
+    origin: `${prod}`,
 }));
 
 const uploadsDir = require('path').join(__dirname, '/uploads');
