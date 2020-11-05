@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors({credentials: true, origin: `${prod}`}));
+app.use(cors({credentials: true, origin: ['http://blob-zone.com', 'http://blob-zone.com/admin'] }));
 
 const uploadsDir = require('path').join(__dirname, '/uploads');
 console.log('uploadsDir', uploadsDir);
