@@ -15,7 +15,7 @@ router.get('/articles', (req, res) => {
        }));
 });
 
-router.get('./articles/:id', (req, res) => {
+router.get('/articles/:id', (req, res) => {
     console.log('req.body', req.body);
     const id = req.params.id;
     Article.findById(id)
