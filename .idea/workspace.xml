@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1de0943-fbc9-412f-a451-2d44f3fe6485" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/uploads/1604575948905-826259658" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/1604577252158-396051727" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/1604580685507-350446871" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/1604581496386-391663584" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1604575948905-826259658" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1604577252158-396051727" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1604580685507-350446871" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/image-1604581496386-391663584" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models/article-contenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models/auteur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/models/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/v1/auteur.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/article" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/article" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/models/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/models/tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/article.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/article.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/v1/tag.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/tag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../agence" />
+    <property name="last_opened_file_path" value="D:/Node/node-mvc" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -80,18 +82,41 @@
       <workItem from="1604413927386" duration="4198000" />
       <workItem from="1604473075848" duration="9934000" />
       <workItem from="1604493218804" duration="12328000" />
-      <workItem from="1604556339806" duration="12364000" />
+      <workItem from="1604556339806" duration="13063000" />
+      <workItem from="1604643301127" duration="11115000" />
+      <workItem from="1604665586339" duration="4465000" />
+      <workItem from="1604754608523" duration="43000" />
+      <workItem from="1604756814118" duration="31000" />
+      <workItem from="1605018848492" duration="2226000" />
+      <workItem from="1605080373446" duration="1246000" />
+      <workItem from="1605161563012" duration="1275000" />
+      <workItem from="1605184040313" duration="2041000" />
+      <workItem from="1605192142506" duration="2287000" />
+      <workItem from="1605249020027" duration="10331000" />
+      <workItem from="1605338156835" duration="5359000" />
+      <workItem from="1605348339474" duration="852000" />
+      <workItem from="1605509697432" duration="694000" />
+      <workItem from="1605679042037" duration="5021000" />
+      <workItem from="1605715833094" duration="601000" />
+      <workItem from="1605765600746" duration="2440000" />
+      <workItem from="1605802337678" duration="1086000" />
+      <workItem from="1605854343082" duration="5271000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../agence/agence-front/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604482835763">
+    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605249659875">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1604482835763" />
+    <state x="248" y="364" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1605249659875" />
     <state x="950" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604310456654">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -100,10 +125,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="952" y="248" key="#index.js/0.0.1920.1080@0.0.1920.1080" timestamp="1604310520452" />
-    <state x="1182" y="380" key="FileChooserDialogImpl" timestamp="1604312566583">
+    <state x="1182" y="380" key="FileChooserDialogImpl" timestamp="1605765743038">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1182" y="380" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1604312566583" />
+    <state x="1182" y="380" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1605765743038" />
     <state x="0" y="175" key="SettingsEditor" timestamp="1604556437347">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -116,13 +141,21 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="1026" y="431" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1080@0.0.1920.1080" timestamp="1602662477193" />
-    <state x="243" y="13" width="667" height="889" key="dock-window-1" timestamp="1604473539035">
+    <state x="1071" y="90" width="809" height="695" key="dock-window-1" timestamp="1605338552689">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="243" y="13" width="667" height="889" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1604473539035" />
-    <state x="259" y="5" width="667" height="1007" key="dock-window-2" timestamp="1604479313175">
+    <state x="1071" y="90" width="809" height="695" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1605338552689" />
+    <state x="0" y="0" width="992" height="672" key="dock-window-2" timestamp="1604646947990">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="259" y="5" width="667" height="1007" key="dock-window-2/0.0.1920.1080@0.0.1920.1080" timestamp="1604479313175" />
+    <state x="0" y="0" width="992" height="672" key="dock-window-2/0.0.1920.1080@0.0.1920.1080" timestamp="1604646947990" />
+    <state x="0" y="0" width="752" height="672" key="dock-window-3" timestamp="1604646947990">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="0" width="752" height="672" key="dock-window-3/0.0.1920.1080@0.0.1920.1080" timestamp="1604646947990" />
+    <state x="0" y="7" width="992" height="672" key="dock-window-4" timestamp="1604646947990">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="0" y="7" width="992" height="672" key="dock-window-4/0.0.1920.1080@0.0.1920.1080" timestamp="1604646947990" />
   </component>
 </project>

@@ -1,11 +1,17 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-const ArticleSchema = new mongoose.Schema({
+const ArticleSchema = new Schema({
    dateCreation: { type: Date, default: Date.now },
    titre: String,
-   descriptif: String,
+   presentation: String,
    texte: String,
-   image: String
+   image: String,
+   auteur: String
+/*   auteur: {
+      type: Schema.Types.ObjectId,
+      ref: "Auteur"
+   }*/
 });
 
 module.exports = mongoose.model('Article', ArticleSchema );

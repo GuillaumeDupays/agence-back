@@ -2,7 +2,7 @@ const express = require('express');
 const router = express();
 const Article = require('../models/article');
 const multer = require('multer');
-
+const db = require('mongoose');
 
 router.get('/articles', (req, res) => {
    Article.find()
@@ -37,6 +37,24 @@ const storage = multer.diskStorage({
     }
 });
 
+/*Article.aggregate([
+    { $lookup:
+            {
+                from: 'tags',
+                localField: 'tag',
+                foreignField: 'tagNom',
+                as: 'tags'
+            }
+    },
+]).exec((err, result) => {
+    if(err) {
+        console.log('erreur', err)
+    }
+    else {
+        console.log(result);
+    }
+});*/
+
 let uniqueSuffix = '';
 
 const upload = multer({storage: storage});
@@ -69,9 +87,13 @@ router.delete('/articles/:id', (req, res) => {
     });
 });
 
+
 router.get('/images/:image', (req, res) => {
     const image = req.params.image;
     res.sendFile(path.join(__dirname, `./uploads/${image}`));
 });
+
+
+
 
 module.exports = router;

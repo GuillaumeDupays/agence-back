@@ -3,6 +3,7 @@ const app = express();
 const api = require('./api/v1/index');
 const apiArticle = require('./api/v1/article');
 const apiTag = require('./api/v1/tag');
+const apiAuteur = require('./api/v1/auteur');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
@@ -29,7 +30,7 @@ const uploadsDir = require('path').join(__dirname, '/uploads');
 console.log('uploadsDir', uploadsDir);
 app.use(express.static(uploadsDir));
 
-app.use('/api/v1', api, apiArticle, apiTag ); //localhost:3000/api/v1
+app.use('/api/v1', api, apiArticle, apiTag, apiAuteur ); //localhost:3000/api/v1
 
 app.use((req, res) => {
     const err = new Error('404 - Non trouvé...');
