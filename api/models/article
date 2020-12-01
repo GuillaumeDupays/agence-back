@@ -5,9 +5,20 @@ const ArticleSchema = new Schema({
    dateCreation: { type: Date, default: Date.now },
    titre: String,
    presentation: String,
-   texte: String,
    image: String,
-   auteur: String
+   auteur: String,
+   paragraphes : {
+      titreP1: String,
+      p1: String,
+      titreP2: String,
+      p2: String,
+      titreP3: String,
+      p3: String,
+      titreP4: String,
+      p4: String,
+      titreP5: String,
+      p5: String
+   }
 /*   auteur: {
       type: Schema.Types.ObjectId,
       ref: "Auteur"
