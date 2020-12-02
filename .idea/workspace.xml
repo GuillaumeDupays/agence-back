@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f1de0943-fbc9-412f-a451-2d44f3fe6485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/1606826971797-139890742" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/image-1606826971797-139890742" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +34,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.1" />
-    <property name="last_opened_file_path" value="D:/Node/node-mvc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Agence\agence-back\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Agence\agence-back\uploads" />
+      <recent name="D:\Agence\agence-back\images" />
       <recent name="D:\Agence\agence-back" />
     </key>
   </component>
@@ -96,7 +104,8 @@
       <workItem from="1606115153827" duration="2559000" />
       <workItem from="1606567112703" duration="1162000" />
       <workItem from="1606812645612" duration="2205000" />
-      <workItem from="1606825951133" duration="924000" />
+      <workItem from="1606825951133" duration="2256000" />
+      <workItem from="1606891604067" duration="2423000" />
     </task>
     <servers />
   </component>
